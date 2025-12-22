@@ -1,5 +1,24 @@
 # @cloudflare/vite-plugin
 
+## 1.20.0
+
+### Minor Changes
+
+- [#11620](https://github.com/cloudflare/workers-sdk/pull/11620) [`25f6672`](https://github.com/cloudflare/workers-sdk/commit/25f66726d3b2f55a6139273e8f307f0cf3c44422) Thanks [@dario-piotrowicz](https://github.com/dario-piotrowicz)! - Expose a new `getLocalWorkerdCompatibilityDate` utility that allows callers to get the compatibility date of the locally installed `workerd` package.
+
+### Patch Changes
+
+- [#11735](https://github.com/cloudflare/workers-sdk/pull/11735) [`dd66dcd`](https://github.com/cloudflare/workers-sdk/commit/dd66dcdd08472d7bde944093bab74b77d1cca45a) Thanks [@jamesopstad](https://github.com/jamesopstad)! - Remove `topLevelName` and `name` when passing `entryWorkerConfig` to the `config `function for auxiliary Workers.
+
+  The `name` for each Worker should be unique and the `topLevelName` is computed rather than provided directly.
+
+- [#11720](https://github.com/cloudflare/workers-sdk/pull/11720) [`0457de6`](https://github.com/cloudflare/workers-sdk/commit/0457de6f7076b3e707b2b5cff3c7a6578275a299) Thanks [@jamesopstad](https://github.com/jamesopstad)! - fix: regression where plain class and object types were no longer supported as Durable Objects and Worker entrypoints
+
+- Updated dependencies [[`02fbd22`](https://github.com/cloudflare/workers-sdk/commit/02fbd229b339667d9985d0cc648a8cbecc53962e), [`b993d95`](https://github.com/cloudflare/workers-sdk/commit/b993d9528646943ad3b5d9c6d4239551ad490fa9), [`f612b46`](https://github.com/cloudflare/workers-sdk/commit/f612b4683a7e1408709ad378fb6c5b96af485d49), [`77078ef`](https://github.com/cloudflare/workers-sdk/commit/77078eff5eb4b2318282b76b30205d35bf22ad66), [`65d1850`](https://github.com/cloudflare/workers-sdk/commit/65d185016bc9650ae28077bba573dba120ccee1c), [`1615fce`](https://github.com/cloudflare/workers-sdk/commit/1615fce11d4f3c73c93d85d8904062ab1dbddfb1), [`8eede3f`](https://github.com/cloudflare/workers-sdk/commit/8eede3f213ef8ad5aed3102e6f9c20cba9ea8a66), [`5121b23`](https://github.com/cloudflare/workers-sdk/commit/5121b23cb1e892597befe9e4ee2ec0fee143f482), [`82e7e90`](https://github.com/cloudflare/workers-sdk/commit/82e7e90e3635c0d7fecdb7c7e29cb391f47bd8b6), [`62fd118`](https://github.com/cloudflare/workers-sdk/commit/62fd11870972ea67b638452bd29fc2ead648f52f), [`fc95831`](https://github.com/cloudflare/workers-sdk/commit/fc958315f7f452155385628092db822badc09404), [`b0dbf1a`](https://github.com/cloudflare/workers-sdk/commit/b0dbf1ac5c998365bb14e9a25f9a28773ba299d5), [`df1f9c9`](https://github.com/cloudflare/workers-sdk/commit/df1f9c914524b7a20396aaa4476200501ea05fc1), [`d059f69`](https://github.com/cloudflare/workers-sdk/commit/d059f69706bcb6c2fc4c3e65bad4f8effeffcb6a), [`b827893`](https://github.com/cloudflare/workers-sdk/commit/b82789341b4cb6e0f49c69682a75fb4a1036077b)]:
+  - wrangler@4.57.0
+  - miniflare@4.20251221.0
+  - @cloudflare/unenv-preset@2.8.0
+
 ## 1.19.0
 
 ### Minor Changes

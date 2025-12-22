@@ -1,5 +1,29 @@
 # miniflare
 
+## 4.20251221.0
+
+### Patch Changes
+
+- [#11714](https://github.com/cloudflare/workers-sdk/pull/11714) [`65d1850`](https://github.com/cloudflare/workers-sdk/commit/65d185016bc9650ae28077bba573dba120ccee1c) Thanks [@dependabot](https://github.com/apps/dependabot)! - chore: update dependencies of "miniflare" package
+
+  The following dependency versions have been updated:
+
+  | Dependency | From         | To           |
+  | ---------- | ------------ | ------------ |
+  | workerd    | 1.20251217.0 | 1.20251219.0 |
+
+- [#11732](https://github.com/cloudflare/workers-sdk/pull/11732) [`1615fce`](https://github.com/cloudflare/workers-sdk/commit/1615fce11d4f3c73c93d85d8904062ab1dbddfb1) Thanks [@dependabot](https://github.com/apps/dependabot)! - chore: update dependencies of "miniflare" package
+
+  The following dependency versions have been updated:
+
+  | Dependency | From         | To           |
+  | ---------- | ------------ | ------------ |
+  | workerd    | 1.20251219.0 | 1.20251221.0 |
+
+- [#11642](https://github.com/cloudflare/workers-sdk/pull/11642) [`8eede3f`](https://github.com/cloudflare/workers-sdk/commit/8eede3f213ef8ad5aed3102e6f9c20cba9ea8a66) Thanks [@petebacondarwin](https://github.com/petebacondarwin)! - Fix intermittent "Fetch failed" errors in Miniflare tests on Windows
+
+  Miniflare tests would occasionally fail with "Fetch failed" errors (particularly on Windows CI runners) due to race conditions between undici's Keep-Alive mechanism and the Miniflare server closing idle connections. Miniflare now configures the Dispatcher to prevent connection reuse and eliminate these race condition errors.
+
 ## 4.20251217.0
 
 ### Patch Changes

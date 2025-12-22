@@ -1,5 +1,20 @@
 # @cloudflare/containers-shared
 
+## 0.7.0
+
+### Minor Changes
+
+- [#11702](https://github.com/cloudflare/workers-sdk/pull/11702) [`f612b46`](https://github.com/cloudflare/workers-sdk/commit/f612b4683a7e1408709ad378fb6c5b96af485d49) Thanks [@gpanders](https://github.com/gpanders)! - Add support for trusted_user_ca_keys in Wrangler
+
+  You can now configure SSH trusted user CA keys for containers. Add the following to your wrangler.toml:
+
+  ```toml
+  [[containers.trusted_user_ca_keys]]
+  public_key = "ssh-ed25519 AAAAC3..."
+  ```
+
+  This allows you to specify CA public keys that can be used to verify SSH user certificates.
+
 ## 0.6.0
 
 ### Minor Changes
